@@ -431,7 +431,7 @@ Heaven's Lost Property Final：Eternal My Master => Heaven's Lost Property Final
 (Shingeki no Kyojin|Attack on Titan|進撃の巨人).*?(S1-4) => Shingeki No Kyojin
 # jojo的奇妙冒险
 (JOJO的奇妙冒险.*?岸边露伴一动不动|岸辺露伴は動かない|Kishibe Rohan wa Ugokanai|Thus Spoke Kishibe Rohan) => 岸边露伴一动不动 {[tmdbid=45790;type=tv;s=0]}
-(JOJO的奇妙冒险.*?(幻影血脉|战斗潮流|星辰|不灭|黄金|石之海).*?Part 1|JoJo.*?Part 1|ジョジョ.*? => JOJO的奇妙冒险 {[tmdbid=45790;type=tv;s=1]}
+(JOJO的奇妙冒险.*?(幻影血脉|战斗潮流?:)|JoJo.*?Part 1\+2|ジョジョ.*? => JOJO的奇妙冒险 {[tmdbid=45790;type=tv;s=1]}
 (JOJO的奇妙冒险.*?(星尘斗士|星辰十字军)|JoJo.*?Part 3|ジョジョ.*?スターダストクルセイダース) => JOJO的奇妙冒险 {[tmdbid=45790;type=tv;s=2]}
 (JOJO的奇妙冒险.*?不灭钻石|JoJo.*?Part 4|ジョジョ.*?ダイヤモンドは砕けない) => JOJO的奇妙冒险 {[tmdbid=45790;type=tv;s=3]}
 (JOJO的奇妙冒险.*?黄金之风|JoJo.*?Part 5|ジョジョ.*?黄金の風) => JOJO的奇妙冒险 {[tmdbid=45790;type=tv;s=4]}
@@ -587,7 +587,7 @@ Billion Meta Lab|\bBML\b => 亿次研同好会
 (?i)^[\W_](.*?(?:社|组|組|队|隊|屋|烤肉架|制作|动漫|動漫|同好會|同好会|学园|學園|Lab|Production|House|Subs?|Raws?|Studio))[\W_]+(?:[\W_]+\d{1,2}月(?:新?番|国漫)[\W_]+)?[\[|【](.*?)[\]|】] => [\1]\2
 Hi10p_1080p => 1080p x264
 Ma10p_1080p => 1080p x265
-HEVC Main10P => x265
+(HEVC Main10P|HEVC|H265|H\.265) => x265
 # Extra集 屏蔽词
 \(Extra\d\)
 \(Extra #[0-9]*\)
