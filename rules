@@ -430,6 +430,20 @@ Heaven's Lost Property Final：Eternal My Master => Heaven's Lost Property Final
 (?<=LoliHouse.?) Kingdom S6 => 王者天下.S06 {[tmdbid=46437;type=tv;]}
 # 进击的巨人
 (Shingeki no Kyojin|Attack on Titan|進撃の巨人).*?(S1-4) => Shingeki No Kyojin
+# jojo的奇妙冒险
+(JOJO的奇妙冒险.*?岸边露伴一动不动|岸辺露伴は動かない|Kishibe Rohan wa Ugokanai|Thus Spoke Kishibe Rohan) => 岸边露伴一动不动 {[tmdbid=45790;type=tv;s=0]}
+(JOJO的奇妙冒险.*?(幻影血脉|战斗潮流|星辰|不灭|黄金|石之海).*?Part 1|JoJo.*?Part 1|ジョジョ.*? => JOJO的奇妙冒险 {[tmdbid=45790;type=tv;s=1]}
+(JOJO的奇妙冒险.*?(星尘斗士|星辰十字军)|JoJo.*?Part 3|ジョジョ.*?スターダストクルセイダース) => JOJO的奇妙冒险 {[tmdbid=45790;type=tv;s=2]}
+(JOJO的奇妙冒险.*?不灭钻石|JoJo.*?Part 4|ジョジョ.*?ダイヤモンドは砕けない) => JOJO的奇妙冒险 {[tmdbid=45790;type=tv;s=3]}
+(JOJO的奇妙冒险.*?黄金之风|JoJo.*?Part 5|ジョジョ.*?黄金の風) => JOJO的奇妙冒险 {[tmdbid=45790;type=tv;s=4]}
+(JOJO的奇妙冒险.*?石之海|JoJo.*?Part 6|ジョジョ.*?ストーンオーシャン) => JOJO的奇妙冒险 {[tmdbid=45790;type=tv;s=5]}
+# 鬼灭之刃
+(鬼灭之刃.*?立志篇|鬼滅の刃.*?立志編|Demon Slayer.*?Unwavering Resolve) => 鬼灭之刃 {[tmdbid=85937;type=tv;s=1]}
+(鬼灭之刃.*?无限列车篇|鬼滅の刃.*?無限列車|Demon Slayer.*?Mugen Train) => 鬼灭之刃 {[tmdbid=85937;type=tv;s=2]}
+(鬼灭之刃.*?无限列车.*?剧场版|鬼滅の刃.*?無限列車.*?劇場版|Demon Slayer.*?Mugen Train.*?Movie) => 鬼灭之刃 无限列车篇 {[tmdbid=635302;type=movie]}
+(鬼灭之刃.*?游郭|鬼滅の刃.*?遊郭|Demon Slayer.*?Entertainment District) => 鬼灭之刃 {[tmdbid=85937;type=tv;s=3]}
+(鬼灭之刃.*?刀匠村|鬼滅の刃.*?刀鍛冶の里|Demon Slayer.*?Swordsmith Village) => 鬼灭之刃 {[tmdbid=85937;type=tv;s=4]}
+(鬼灭之刃.*?柱训练|鬼滅の刃.*?柱稽古|Demon Slayer.*?Hashira Training) => 鬼灭之刃 {[tmdbid=85937;type=tv;s=4]}
 ## 泛用规则，用于清除多余的别名 ##
 \[ANi\].*\/ => [ANi]
 #辅助识别修正词
@@ -456,6 +470,7 @@ cht&jpn => jptc
 (?<=(VCB-Studio|ANi).*?)IV => S04
 (?<=(VCB-Studio|ANi).*?)III => S03
 (?<=(VCB-Studio|ANi).*?)II => S02
+^(\[[^\]]*VCB-Studio[^\]]*\])\s*([^/]+?)\s*/.*
 (?<=[\[【].*?(?:组|組|sub|S(?:UB|ub|tudio)|Raw(?:|s)|社)[\]】])(?:(?:\[|【|★|)\d{1,2}月新番(?:\]|】|★|)|)[\[【](.*?)[\]】] => \1
 (?<=[\W_])(CR|Baha|KKTV|Abema|B-Global|Sentai|MyVideo|AMZN|KKTV|friDay|DSNP|LINETV|NF|Viu)(?=[\W_]) => -\1
 \[BIG5\] => [繁体内封]
