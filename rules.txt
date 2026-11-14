@@ -470,7 +470,7 @@ cht&jpn => jptc
 (?<=(VCB-Studio|ANi).*?)IV => S04
 (?<=(VCB-Studio|ANi).*?)III => S03
 (?<=(VCB-Studio|ANi).*?)II => S02
-^(\[[^\]]*VCB-Studio[^\]]*\])\s*([^/]+?)\s*/.*
+# ^(\[[^\]]*VCB-Studio[^\]]*\])\s*([^/]+?)\s*/.*
 (?<=[\[【].*?(?:组|組|sub|S(?:UB|ub|tudio)|Raw(?:|s)|社)[\]】])(?:(?:\[|【|★|)\d{1,2}月新番(?:\]|】|★|)|)[\[【](.*?)[\]】] => \1
 (?<=[\W_])(CR|Baha|KKTV|Abema|B-Global|Sentai|MyVideo|AMZN|KKTV|friDay|DSNP|LINETV|NF|Viu)(?=[\W_]) => -\1
 \[BIG5\] => [繁体内封]
@@ -563,6 +563,7 @@ AKito => AKito秋人
 (?i)\bPOPGO\b => 漫游字幕组
 \bVCB-S\b => VCB-Studio
 \b1080\b => 1080p
+\s*\b(?:10|8)[\-\s]?bit\b
 WMSUB-\d\dth => 风车字幕组
 (?i)\bFatCatRaw\b => 肥猫压制
 (?i)\bFSH Subtitle Group\b => FSH字幕组
