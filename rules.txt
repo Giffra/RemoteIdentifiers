@@ -1,4 +1,3 @@
-#========以下识别词由 RemoteIdentifiers 插件添加========#
 #猎冰
 The.Hunter.S01(?=.*(?:2024)) => 猎冰.The.Hunter.2024.S01
 #天龙八部
